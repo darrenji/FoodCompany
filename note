@@ -18,3 +18,10 @@ border-radius:25px;
 Brackets插件：Autoprefixer
 
 jQuery插件：Magnific popup, tooltipsters,Maplace.js, Typer.js, One Page Scroll, Waypoints
+
+压缩图片：尽量降低分辨率，http://optimizilla.com/
+
+压缩CSS：
+
+js压缩：
+
