@@ -1,15 +1,16 @@
-/*--------------------------------------*/
-/*orange color:#cd6d17*/
-/*--------------------------------------*/
+/*
+Orange color: #e67e22
 
-/*--------------------------------------*/
-/*basic setup*/
-/*--------------------------------------*/
+*/
+
+
+/* ----------------------------------------------- */
+/* BASIC SETUP */
+/* ----------------------------------------------- */
 
 * {
     margin: 0;
     padding: 0;
-    -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
 
@@ -24,7 +25,7 @@ body {
     overflow-x: hidden;
 }
 
-.clearfix {zoom:1}
+.clearfix {zoom: 1;}
 .clearfix:after {
     content: '.';
     clear: both;
@@ -33,31 +34,30 @@ body {
     visibility: hidden;
 }
 
-/*--------------------------------------*/
-/*reusable components*/
-/*--------------------------------------*/
+/* ----------------------------------------------- */
+/* REUSABLE COMPONENTS */
+/* ----------------------------------------------- */
+
 
 .row {
     max-width: 1140px;
-    margin: 0 auto 0 auto;
+    margin: 0 auto;
 }
 
 section {
-    padding-top: 80px;
+    padding: 80px 0;
 }
 
 .box {
     padding: 1%;
 }
 
-/*---------------headings----------------*/
-
+/* ----- HEADINGS ----- */
 h1,
 h2,
-h3 {    
+h3 {
     font-weight: 300;
     text-transform: uppercase;
-     
 }
 
 h1 {
@@ -66,7 +66,7 @@ h1 {
     color: #fff;
     font-size: 240%;
     word-spacing: 4px;
-    letter-spacing: 1px;  
+    letter-spacing: 1px;
 }
 
 h2 {
@@ -74,7 +74,12 @@ h2 {
     word-spacing: 2px;
     text-align: center;
     margin-bottom: 30px;
-    letter-spacing: 1px;  
+    letter-spacing: 1px;
+}
+
+h3 {
+    font-size: 110%;
+    margin-bottom: 15px;
 }
 
 h2:after {
@@ -87,13 +92,7 @@ h2:after {
     margin-top: 30px;
 }
 
-h3 {
-    font-size: 110%;
-    margin-bottom: 15px;
-}
-
-/*---------------paragraphs----------------*/
-
+/* ----- PARAGRAPHS ----- */
 .long-copy {
     line-height: 145%;
     width: 70%;
@@ -105,8 +104,8 @@ h3 {
     line-height: 145%;
 }
 
-/*---------------icons----------------*/
 
+/* ----- ICONS ----- */
 .icon-big {
     font-size: 350%;
     display: block;
@@ -120,20 +119,22 @@ h3 {
     text-align: center;
     color: #e67e22;
     font-size: 120%;
+    margin-right: 10px;
+    
+    /*secrets to align text and icons*/
     line-height: 120%;
     vertical-align: middle;
     margin-top: -5px;
-    margin-right: 10px;
 }
 
-/*---------------links----------------*/
+/* ----- LINKS ----- */
 
 a:link,
 a:visited {
     color: #e67e22;
     text-decoration: none;
-    border-bottom: 1px solid #e67e22;
     padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
     -webkit-transition: border-bottom 0.2s, color 0.2s;
     transition: border-bottom 0.2s, color 0.2s;
 }
@@ -144,8 +145,7 @@ a:active {
     border-bottom: 1px solid transparent;
 }
 
-/*---------------buttons----------------*/
-
+/* ----- BUTTONS ----- */
 .btn:link,
 .btn:visited,
 input[type=submit] {
@@ -153,11 +153,10 @@ input[type=submit] {
     padding: 10px 30px;
     font-weight: 300;
     text-decoration: none;
-    border-radius: 200px;  
-    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;  
+    border-radius: 200px;
+    -webkit-transition: background-color 0.2s, border 0.2s, color 0.2s;
     transition: background-color 0.2s, border 0.2s, color 0.2s;
 }
-
 
 .btn-full:link,
 .btn-full:visited,
@@ -168,7 +167,7 @@ input[type=submit] {
     margin-right: 15px;
 }
 
-.btn-ghost:link, 
+.btn-ghost:link,
 .btn-ghost:visited {
     border: 1px solid #e67e22;
     color: #e67e22;
@@ -183,28 +182,28 @@ input[type=submit]:active {
 
 .btn-full:hover,
 .btn-full:active {
-    border: 1px solid #e67e22;
+    border: 1px solid #cf6d17;
 }
 
 .btn-ghost:hover,
 .btn-ghost:active {
-    border: 1px solid #e67e22;
+    border: 1px solid #cf6d17;
     color: #fff;
 }
 
-/*--------------------------------------*/
-/*header*/
-/*--------------------------------------*/
+
+/* ----------------------------------------------- */
+/* HEADER */
+/* ----------------------------------------------- */
 
 header {
-    background-image: -webkit-gradient(linear,left top, left bottom,from(rgba(0,0,0,0.7)),to(rgba(0,0,0,0.7))), url(img/hero.jpg);
-    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img/hero.jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(img/hero.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
     background-attachment: fixed;
 }
-
 
 .hero-text-box {
     position: absolute;
@@ -212,6 +211,7 @@ header {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -222,7 +222,7 @@ header {
     margin-top: 20px;
 }
 
-.logo-black {
+.logo-black { 
     display: none;
     height: 50px;
     width: auto;
@@ -230,11 +230,11 @@ header {
     margin: 5px 0;
 }
 
-/*main navi*/
+/* Main navi */
 .main-nav {
     float: right;
     list-style: none;
-    margin-top: 60px;
+    margin-top: 55px;
 }
 
 .main-nav li {
@@ -256,24 +256,36 @@ header {
 
 .main-nav li a:hover,
 .main-nav li a:active {
-    border-bottom: 2px solid #cd6d17;
+    border-bottom: 2px solid #e67e22;
+}
+
+
+/* Mobile navi */
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
     color: #fff;
 }
 
-/*sticky navi*/
 
+/* Sticky navi */
 .sticky {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: rgba(255,255,255,0.98);
+    background-color: rgba(255, 255, 255, 0.98);
     box-shadow: 0 2px 2px #efefef;
+    z-index: 9999;
 }
 
-.sticky .main-nav {
-    margin-top: 18px;
-}
+.sticky .main-nav { margin-top: 18px; }
 
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
@@ -281,20 +293,22 @@ header {
     color: #555;
 }
 
-.sticky .logo {display: none;}
-.sticky .logo-black {display: block;}
+.sticky .logo { display: none; }
+.sticky .logo-black { display: block; }
 
-/*--------------------------------------*/
-/*features*/
-/*--------------------------------------*/
+/* ----------------------------------------------- */
+/* FEATURES */
+/* ----------------------------------------------- */
 
 .section-features .long-copy {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
-/*--------------------------------------*/
-/*meals*/
-/*--------------------------------------*/
+
+/* ----------------------------------------------- */
+/* MEALS */
+/* ----------------------------------------------- */
+
 .section-meals {
     padding: 0;
 }
@@ -322,34 +336,41 @@ header {
     width: 100%;
     height: auto;
     -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
     transform: scale(1.15);
-    -webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
-    transition: opacity 0.5s, -webkit-transform 0.5s;
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
     transition: transform 0.5s, opacity 0.5s;
-    transition: transform 0.5s, opacity 0.5s, -webkit-transform 0.5s;
 }
 
 .meal-photo img:hover {
     opacity: 1;
     -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
     transform: scale(1.03);
 }
 
-/*--------------------------------------*/
-/*how it works*/
-/*--------------------------------------*/
+
+
+/* ----------------------------------------------- */
+/* HOW IT WORKS SECTION */
+/* ----------------------------------------------- */
 
 .section-steps {
     background-color: #f4f4f4;
 }
 
-.steps-box:first-child {
-    text-align: right;
-    padding-right: 3%;
+.steps-box {
     margin-top: 30px;
 }
 
+
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+}
+
 .steps-box:last-child {
+    text-align: left;
     padding-left: 3%;
     margin-top: 70px;
 }
@@ -363,21 +384,21 @@ header {
 }
 
 .works-step:last-of-type {
-     margin-bottom: 80px;   
+    margin-bottom: 80px;
 }
 
 .works-step div {
     color: #e67e22;
-    border: 2px solid #e67e22;
-    display: inline-block;
-    border-radius: 50%;
-    width: 55px;
-    height: 55px;
-    text-align: center;
-    padding: 5px;
-    float: left;
     font-size: 150%;
+    height: 54px;
+    width: 54px;
+    border: 2px solid #e67e22;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
     margin-right: 25px;
+    float: left;
+    padding: 5px;
 }
 
 .btn-app:link,
@@ -391,9 +412,10 @@ header {
     margin-right: 10px;
 }
 
-/*--------------------------------------*/
-/* cities */
-/*--------------------------------------*/
+
+/* ----------------------------------------------- */
+/* CITIES */
+/* ----------------------------------------------- */
 
 .box img {
     width: 100%;
@@ -405,15 +427,16 @@ header {
     margin-bottom: 5px;
 }
 
-/*--------------------------------------*/
-/* testimonials */
-/*--------------------------------------*/
+
+/* ----------------------------------------------- */
+/* TESTIMONIALS */
+/* ----------------------------------------------- */
 
 .section-testimonials {
-    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(img/back-customers.jpg);
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(img/back-customers.jpg);
     background-size: cover;
-    color: white;
+    color: #fff;
     background-attachment: fixed;
 }
 
@@ -426,7 +449,7 @@ blockquote {
 }
 
 blockquote:before {
-    content: '\201C';
+    content: "\201C";
     font-size: 500%;
     display: block;
     position: absolute;
@@ -434,24 +457,23 @@ blockquote:before {
     left: -5px;
 }
 
-
 cite {
     font-size: 90%;
-    margin-top: 50px;
+    margin-top: 25px;
     display: block;
 }
 
 cite img {
-    height: 50px;
+    height: 45px;
     border-radius: 50%;
     margin-right: 10px;
-    display: block;
     vertical-align: middle;
 }
 
-/*--------------------------------------*/
-/* plans */
-/*--------------------------------------*/
+
+/* ----------------------------------------------- */
+/* SIGN UP */
+/* ----------------------------------------------- */
 
 .section-plans {
     background-color: #f4f4f4;
@@ -462,8 +484,7 @@ cite img {
     border-radius: 5px;
     width: 90%;
     margin-left: 5%;
-    -webkit-box-shadow: 0 2px 2px #e3e3e3;
-    box-shadow: 0 2px 2px #e3e3e3;
+    box-shadow: 0 2px 2px #efefef;
 }
 
 .plan-box div {
@@ -479,18 +500,20 @@ cite img {
 
 .plan-box div:last-child {
     text-align: center;
+    border: 0;
 }
+
 
 .plan-price {
     font-size: 300%;
     margin-bottom: 10px;
     font-weight: 100;
+    color: #e67e22;
 }
 
 .plan-price span {
     font-size: 30%;
     font-weight: 300;
-    color: #e67e22;
 }
 
 .plan-price-meal {
@@ -505,9 +528,10 @@ cite img {
     padding: 5px 0;
 }
 
-/*--------------------------------------*/
-/* form */
-/*--------------------------------------*/
+
+/* ----------------------------------------------- */
+/* FORM */
+/* ----------------------------------------------- */
 
 .contact-form {
     width: 60%;
@@ -532,17 +556,14 @@ input[type=checkbox] {
     margin: 10px 5px 10px 0;
 }
 
-*:focus {
-    outline: none;
-}
+*:focus {outline: none;}
 
-/*--------------------------------------*/
-/* footer */
-/*--------------------------------------*/
 
+/* ----------------------------------------------- */
+/* FOOTER */
+/* ----------------------------------------------- */
 
 footer {
-    margin-top: 35px;
     background-color: #333;
     padding: 50px;
     font-size: 80%;
@@ -552,8 +573,6 @@ footer {
     list-style: none;
     float: left;
 }
-
-
 
 .social-links {
     list-style: none;
@@ -572,7 +591,7 @@ footer {
 }
 
 .footer-nav li a:link,
-.footer-nav li a:visited,
+.footer-nav li a:visited, 
 .social-links li a:link,
 .social-links li a:visited {
     text-decoration: none;
@@ -585,12 +604,6 @@ footer {
 .footer-nav li a:hover,
 .footer-nav li a:active {
     color: #ddd;
-}
-
-footer p {
-    color: #888;
-    text-align: center;
-    margin-top: 30px;
 }
 
 .social-links li a:link,
@@ -621,6 +634,16 @@ footer p {
 .ion-social-instagram:hover {
     color: #517fa4;
 }
+
+
+footer p {
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+
 
 /* ----------------------------------------------- */
 /* Animations */
